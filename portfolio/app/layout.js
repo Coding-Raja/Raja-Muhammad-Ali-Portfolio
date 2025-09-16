@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header.js";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Personal Portfolio",
   description: "This is my Personal Portfolio",
+   icons: {
+    icon: {
+      url: '/Hacker.png',
+      type: 'image/png',
+    }
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -22,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
