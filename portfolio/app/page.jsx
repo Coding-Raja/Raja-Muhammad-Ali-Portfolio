@@ -4,10 +4,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section
-        className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8"
-        id="Home"
-      >
+      <section className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="Home">
         <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-black/30 rounded-l-lg">
           <h1 className="text-xl sm:text-2xl md:text-3xl text-balance font-bold mb-4 md:mb-5">
             Hi, I am Raja Muhammad Ali
@@ -22,10 +19,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section
-        className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8"
-        id="About"
-      >
+      <section className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="About">
         <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-black/30 rounded-l-lg">
           {/* Section Title */}
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 tracking-wide">
@@ -249,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="Contact" className="flex justify-center items-center mt-10 px-4 sm:px-6 lg:px-8">
+      <section id="Contact" className="flex justify-center items-center mt-10 mb-10 px-4 sm:px-6 lg:px-8">
         <div className="w-full md:w-5/6 lg:w-3/4 bg-white/50 backdrop-blur-sm p-6 sm:p-8 md:p-10 border-l-2 border-black/30 rounded-lg">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-10 text-black tracking-wide">
           Get In Touch
