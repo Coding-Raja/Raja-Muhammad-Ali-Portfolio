@@ -19,6 +19,42 @@
   }
 }
 
+@layer utilities {
+  /* 👇 Animate glow around the box without moving the box */
+  @keyframes glow-around {
+    0% {
+      box-shadow:
+        0 -8px 20px rgba(59,130,246,0.6),  /* top */
+        0 0 0 rgba(59,130,246,0);
+    }
+    25% {
+      box-shadow:
+        8px 0 20px rgba(37,99,235,0.7),   /* right */
+        0 0 0 rgba(59,130,246,0);
+    }
+    50% {
+      box-shadow:
+        0 8px 20px rgba(29,78,216,0.8),   /* bottom */
+        0 0 0 rgba(59,130,246,0);
+    }
+    75% {
+      box-shadow:
+        -8px 0 20px rgba(96,165,250,0.7), /* left */
+        0 0 0 rgba(59,130,246,0);
+    }
+    100% {
+      box-shadow:
+        0 -8px 20px rgba(59,130,246,0.6), /* back to top */
+        0 0 0 rgba(59,130,246,0);
+    }
+  }
+
+  .animate-glow-around {
+    animation: glow-around 3s linear infinite;
+  }
+}
+
 body{
   font-family: Arial, sans-serif;
+  background-color: black;
 }

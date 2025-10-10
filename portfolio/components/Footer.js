@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6">
+    <footer className="bg-black text-white py-6 shadow-[0_0_15px_4px_rgba(59,130,246,0.5)]">
       <div className="container mx-auto flex flex-col items-center">
         {/* Social Links */}
         <div className="flex space-x-8 mb-4">
