@@ -53,8 +53,8 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */} 
-      <section className="flex text-white/70 justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="Home">
-        <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-red-800 shadow-[-8px_0_20px_-4px_rgba(220,38,38,0.8)] rounded-l-lg"> 
+      <section className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="Home">
+        <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-gray-500 rounded-l-lg"> 
           <h1 className="text-xl sm:text-2xl md:text-3xl text-balance font-bold mb-4 md:mb-5"> 
             Hi, I am Raja Muhammad Ali 
           </h1> 
@@ -66,8 +66,8 @@ export default function Home() {
       </section> 
       
       {/* About Section */} 
-      <section className="flex text-white/70 justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="About"> 
-        <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-red-800 shadow-[-8px_0_20px_-4px_rgba(220,38,38,0.8)] rounded-l-lg"> 
+      <section className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="About"> 
+        <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-gray-500 rounded-l-lg"> 
           {/* Section Title */} 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 tracking-wide"> 
             About Me 
@@ -96,19 +96,19 @@ export default function Home() {
                 visually striking. </p> 
                 {/* Skills as badges */} 
                 <ul className="flex flex-wrap gap-3"> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around text-sm sm:text-base">
+                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base">
                    HTML/CSS 
                   </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around text-sm sm:text-base"> 
+                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
                   Tailwind CSS 
                   </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around text-sm sm:text-base"> 
+                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
                   JavaScript 
                   </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around text-sm sm:text-base"> 
+                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
                   React 
                   </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around text-sm sm:text-base"> 
+                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
                   Next.js 
                   </li> 
                 </ul> 
@@ -118,15 +118,15 @@ export default function Home() {
         </section> 
         
         {/* Projects Section */} 
-        <section id="Projects" className="flex text-white/70 justify-center items-center mt-10 px-4 sm:px-6 lg:px-8" > 
-          <div className="w-full md:w-5/6 lg:w-3/4 backdrop-blur-sm p-6 sm:p-8 md:p-10 border-l-2 border-red-800 shadow-[-8px_0_20px_-4px_rgba(220,38,38,0.8)] rounded-lg"> 
+        <section id="Projects" className="flex justify-center items-center mt-10 px-4 sm:px-6 lg:px-8" > 
+          <div className="w-full md:w-5/6 lg:w-3/4 backdrop-blur-sm p-6 sm:p-8 md:p-10 border-l-2 border-gray-500 rounded-lg"> 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-10 tracking-wide"> 
             My Projects 
           </h2> 
           {/* Grid for project cards */} 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8"> 
             {/* Project Card 1 */} 
-            <div className="group rounded-xl shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] animate-glow-around overflow-hidden"> 
+            <div className="group rounded-xl shadow-lg shadow-black/40 overflow-hidden"> 
             <div className="overflow-hidden"> 
               <Image 
               src="/TheCarClub.png" 
@@ -137,24 +137,20 @@ export default function Home() {
               /> 
             </div> 
             <div className="p-4 sm:p-6"> 
-              <h3 className="text-lg sm:text-xl font-bold text-white/70 mb-2"> 
+              <h3 className="text-lg sm:text-xl font-bold mb-2"> 
                 The Car Club 
               </h3> 
-              <p className="text-white/70 text-sm sm:text-base mb-4"> 
+              <p className="text-sm sm:text-base mb-4"> 
                 A modern car enthusiast platform where users can explore car details, compare 
                 models, and join a community of auto lovers. 
               </p> 
               <div className="flex gap-4"> 
-                <div className="flex justify-center items-center w-24 h-8 rounded-md shadow-[0_0_15px_4px_rgba(220,38,38,0.6)]">
-                  <a href="https://github.com/Coding-Raja/The-Car-Club" target="_blank" className="text-blue-500 font-medium hover:underline" > 
-                GitHub 
+                <a href="https://github.com/Coding-Raja/The-Car-Club" target="_blank" className="text-blue-800 font-medium hover:underline" > 
+                  GitHub 
                 </a> 
-                </div>
-                <div className="flex justify-center w-28 items-center h-8 rounded-md shadow-[0_0_15px_4px_rgba(220,38,38,0.6)]">
-                  <a href="https://the-car-club.vercel.app/" target="_blank" className="text-blue-500 font-medium hover:underline" > 
-                Live Demo 
+                <a href="https://the-car-club.vercel.app/" target="_blank" className="text-blue-800 font-medium hover:underline" > 
+                  Live Demo 
                 </a>  
-                </div> 
               </div> 
             </div> 
           </div> 
@@ -165,9 +161,9 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="Contact"
-        className="flex text-white/70 justify-center items-center mt-10 mb-10 px-4 sm:px-6 lg:px-8"
+        className="flex justify-center items-center mt-10 mb-10 px-4 sm:px-6 lg:px-8"
       >
-        <div className="w-full md:w-5/6 lg:w-3/4 backdrop-blur-sm p-6 sm:p-8 md:p-10 border-l-2 border-red-800 shadow-[-8px_0_20px_-4px_rgba(220,38,38,0.8)] rounded-lg">
+        <div className="w-full md:w-5/6 lg:w-3/4 backdrop-blur-sm p-6 sm:p-8 md:p-10 border-l-2 border-gray-500 rounded-lg">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-10 tracking-wide">
             Get In Touch
           </h2>
@@ -178,7 +174,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <label
                   htmlFor="name"
-                  className="mb-2 text-sm font-medium text-white/70"
+                  className="mb-2 text-sm font-medium"
                 >
                   Name
                 </label>
@@ -198,7 +194,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <label
                   htmlFor="email"
-                  className="mb-2 text-sm font-medium text-white/70"
+                  className="mb-2 text-sm font-medium"
                 >
                   Email
                 </label>
@@ -218,7 +214,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <label
                   htmlFor="message"
-                  className="mb-2 text-sm font-medium text-white/70"
+                  className="mb-2 text-sm font-medium"
                 >
                   Message
                 </label>
@@ -238,7 +234,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="w-full sm:w-1/2 md:w-1/3 cursor-pointer font-medium py-2 px-4 rounded-lg shadow-[0_0_15px_4px_rgba(59,130,246,0.5)] hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.8)] duration-500"
+                  className="w-full sm:w-1/2 md:w-1/3 bg-black/90 text-white cursor-pointer font-medium py-2 px-4 rounded-lg shadow-lg shadow-black/70 hover:shadow-xl hover:shadow-black/90 duration-500"
                 >
                   Send Message
                 </button>
