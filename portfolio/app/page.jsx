@@ -73,14 +73,14 @@ export default function Home() {
             About Me 
           </h2> 
           {/* Grid Layout */} 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"> 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center"> 
             {/* Image */} 
             <div className="flex justify-center"> 
               <Image 
               src="/Hacker.png" 
               alt="Picture" 
-              width={400} 
-              height={300} 
+              width={300} 
+              height={250} 
               className="rounded-lg object-contain" 
               /> 
             </div> 
@@ -94,28 +94,46 @@ export default function Home() {
                 prioritize user experience and performance. My approach combines technical expertise 
                 with artistic vision, resulting in digital products that are both functional and 
                 visually striking. </p> 
-                {/* Skills as badges */} 
-                <ul className="flex flex-wrap gap-3"> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base">
-                   HTML/CSS 
-                  </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
-                  Tailwind CSS 
-                  </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
-                  JavaScript 
-                  </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
-                  React 
-                  </li> 
-                  <li className="px-4 py-2 bg-black/10 rounded-lg shadow-md shadow-black/40 text-sm sm:text-base"> 
-                  Next.js 
-                  </li> 
-                </ul> 
               </div> 
             </div> 
           </div> 
         </section> 
+
+        
+  {/* Skills Section */} 
+      <section className="flex justify-center items-center mt-5 px-4 py-4 sm:px-6 lg:px-8" id="Skills"> 
+        <div className="w-full md:w-5/6 lg:w-3/4 p-4 sm:p-6 md:p-8 border-l-2 border-gray-500 rounded-l-lg"> 
+          {/* Section Title */} 
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 tracking-wide"> 
+            My Skills 
+          </h2> 
+          {/* Grid Layout */} 
+          <div className="w-full md:w-full sm:w-full lg:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-6 items-center"> 
+             <ul>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              HTML
+              </li>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              CSS/Tailwind CSS
+              </li>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              Bootstrap
+              </li>
+             </ul>
+             <ul>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              JavaScript
+              </li>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              Python
+              </li>
+              <li className="px-4 mb-4 text-center bg-gradient-to-tl from-gray-100 to-gray-400  py-2 rounded-lg shadow-md shadow-black/60 text-sm text-gray-700 font-bold sm:text-base">
+              Next.js
+              </li>
+             </ul>
+          </div> 
+        </div> 
+      </section> 
         
         {/* Projects Section */} 
         <section id="Projects" className="flex justify-center items-center mt-10 px-4 sm:px-6 lg:px-8" > 
