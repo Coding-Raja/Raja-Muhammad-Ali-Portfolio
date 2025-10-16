@@ -15,9 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Personal Portfolio",
-  description: "This is my Personal Portfolio",
-   icons: {
+  title: "Raja Muhammad ali - Portfolio | Web Developer & Designer",
+  description: "Professional portfolio of Your Name - Web Developer, Designer. Expertise in React, Next.js, JavaScript, and modern web development. View my projects and skills.",
+  keywords: "web developer, portfolio, react developer, next.js, javascript, frontend developer, web designer, fullstack developer",
+  authors: [{ name: "Your Name" }],
+  openGraph: {
+    title: "Raja Muhammad Ali - Portfolio | Web Developer & Designer",
+    description: "Professional portfolio showcasing projects in web development, design, and programming",
+    url: "https://raja-muhammad-ali-portfolio-pzyixcknf.vercel.app",
+    siteName: "Your Name Portfolio",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raja Muhammad Ali - Portfolio | Web Developer",
+    description: "Web Developer specializing in React, Next.js and modern web technologies",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
     icon: {
       url: '/Hacker.png',
       type: 'image/png',
